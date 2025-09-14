@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Curriculum Brochure</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Poppins', sans-serif; }
+        .card { 
+            border-radius: 1rem; 
+            box-shadow: 0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -2px rgba(0,0,0,.05); 
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.5s ease-out forwards;
+        }
+        .card:hover { 
+            transform: translateY(-5px); 
+            box-shadow: 0 20px 25px -5px rgba(0,0,0,.1),0 10px 10px -5px rgba(0,0,0,.04); 
+        }
+        .card-g-blue { background: linear-gradient(135deg, #e3f2fd, #bbdefb); }
+        .card-g-yellow { background: linear-gradient(135deg, #fffde7, #fff59d); }
+        .card-g-green { background: linear-gradient(135deg, #e8f5e9, #c8e6c9); }
+        .card-g-purple { background: linear-gradient(135deg, #f3e5f5, #e1bee7); }
+        .card-g-red { background: linear-gradient(135deg, #ffebee, #ffcdd2); }
+        .card-g-teal { background: linear-gradient(135deg, #e0f2f1, #b2dfdb); }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-blue-50 to-purple-50">
+    <header class="bg-white/80 shadow-sm backdrop-blur-md sticky top-0 z-10">
+        <div class="container mx-auto px-6 py-8 text-center">
+            <h1 class="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600">Professional Curriculum Progression</h1>
+            <p class="mt-4 text-xl text-gray-600">Master the Google Workspace Suite with Our Expert-Led Modules</p>
+        </div>
+    </header>
+    <main class="container mx-auto px-6 py-16">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+            
+            <!-- Module 1: Google Docs -->
+            <a href="module1-docs.html" class="card card-g-blue" style="animation-delay: 0.1s;">
+                <div class="p-8">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiI+PHBhdGggZmlsbD0iIzQyODVGNCIgZD0iTTI0LjkzMyAyMS4xMDhjLS4xMzUtMS4xNTYtLjc0NC0zLjQ1My0yLjEyNy01LjMyN2wtMi41NTUtMy4zNThjLS40NTYtLjU5OC0uOTk3LTEuMTI3LTEuNTQxLTEuNTlsLTMuMTctMi42MDVjLS41NDQtLjQ2OC0xLjA0OC0uODUtMS40OTgtMS4xMTRoLTh2MjRoMjB2LTkuOTk2YTkuNDQ0IDkuNDQ0IDAgMCAwLTMuOTEzLTQuMDA0ek0xMyAxM2g2djJoLTZ6bTEwIDEwaC0xMnYtMmgxMnptMC00aC0xMnYtMmgxMnoiLz48cGF0aCBmaWxsPSIjMTk2N0QyIiBkPSJNNiAyOFY0aDEwLjM2M2MuNDUtLjI2MiAxLS42NDUgMS41LTEuMTE0bDYuMTY3IDUuMDZjLjU0NC40NjIgMS4wODYgMSAxLjU0MiAxLjU5bDQuMTEzIDUuNDQ3Yy43MDQgMS4xNTYgMS40ODQgMy4yMTMgMi4xMjYgNS4zMjhoLTI1LjgxMXoiIG9wYWNpdHk9Ii4zIi8+PC9zdmc+" alt="Google Docs Logo" class="w-16 h-16 mb-4">
+                    <h3 class="text-2xl font-bold mb-2">Google Docs: The Professional Edge</h3>
+                    <p class="text-gray-600">Move beyond basic word processing. Master smart composition, seamless collaboration, and powerful integrations.</p>
+                </div>
+            </a>
+            
+            <!-- Module 2: Google Slides -->
+            <a href="module2-slides.html" class="card card-g-yellow" style="animation-delay: 0.2s;">
+                <div class="p-8">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiI+PHBhdGggZmlsbD0iI0ZCQkMwNCIgZD0iTTIyLjA5NCAxMy42N2wtNC4wNDQtMi4yOWExLjUgMS41IDAgMCAwLTEuNTQyLS4wMDFsLTYuNTM2IDMuNjhhMS41IDEuNSAwIDAgMC0uNDU5IDIuMTFsMS43NjYgMy4xNTdhMS41IDEuNSAwIDAgMCAyLjEyNC43MmwxLjY4OC0uOTU0YTQuNSA0LjUgMCAwIDEgMy44MDgtLjA0M2wzLjI5IDguNTQ1aDYuMTg4VjE2LjVhMi44MyAyLjgzIDAgMCAwLTIuMjgtMi44M3ptLTEwLjg2NiA1LjU4TDEwIDE4bDIuMjMyLTEuMjYyIDIuMDkgMS4xODQiLz48cGF0aCBmaWxsPSIjRkE3QjE3IiBkPSJNNiA0aDIwdjIySDZ6bTE2LjA5NCA5LjY3bC04LjYxNS00Ljg3N2ExLjUgMS41IDAgMCAwLTEuNTQxIDBsLTguMzc0IDQuNzRhMS41IDEuNSAwIDAgMC0uNDYgMi4xMDFsMy44NTYgNi44NzhhMS41IDEuNSAwIDAgMCAyLjEyNS43MTlsMS42ODgtLjk1NGE0LjUgNC41IDAgMCAxIDMuODA4LS4wNDNsMy4yOSA4LjU0NWgzLjk5MnYtMTkuMTM0Yy4wMDItMS41NTgtMS4yNy0yLjgzLTIuODI4LTIuODNoLS4wMDJ6IiBvcGFjaXR5PSIuMyIvPjwvc3ZnPg==" alt="Google Slides Logo" class="w-16 h-16 mb-4">
+                    <h3 class="text-2xl font-bold mb-2">Google Slides: Compelling Presentations</h3>
+                    <p class="text-gray-600">Craft persuasive, visually stunning presentations that captivate your audience and deliver results.</p>
+                </div>
+            </a>
+            
+            <!-- Module 3: Google Sheets -->
+            <a href="module3-sheets.html" class="card card-g-green" style="animation-delay: 0.3s;">
+                <div class="p-8">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiI+PHBhdGggZmlsbD0iIzM0QTg1MyIgZD0iTTE2IDE2aDExdjJoLTExem0wIDRoMTF2MmgtMTF6bTAtOGg2djJoLTZ6bTAtNGg2djJoLTZ6bS01IDRoNnYyaC02em0wIDRoNnYyaC02em0wIDRoNnYyaC02em0wIDRoNnYyaC02em0wLTRoNnYyaC02eiIvPjxwYXRoIGZpbGw9IiMxRTg4NjciIGQ9Ik0yOCA0SDhCMy40MyA0IDYgNi40MyA2IDh2MTRjMCAxLjU3IDIuNDMgNCA0IDRoMTVjMS41NyAwIDQgLTIuNDMgNCAtNFY1QzI5IDQuNDMgMjguNTcgNCAyOCA0em0tNy41IDE3aC0xMXYtMmgxMXptMC00aC0xMXYtMmgxMXptMC00aC0xMXYtMmgxMXptMC00aC0xMXYtMmgxMXptNC41IDhoLTJ2LTJoMnptMC00aC0ydi0yaDJ6bTAtNGgtMnYtMmgyem0wLTRoLTJ2LTJoMiIgb3BhY2l0eT0iLjMiLz48L3N2Zz4=" alt="Google Sheets Logo" class="w-16 h-16 mb-4">
+                    <h3 class="text-2xl font-bold mb-2">Google Sheets: Data-Driven Decisions</h3>
+                    <p class="text-gray-600">Unlock the power of data with advanced formulas, pivot tables, and insightful visualizations.</p>
+                </div>
+            </a>
+            
+            <!-- Module 4: Forms & Sites -->
+            <a href="module4-forms-sites.html" class="card card-g-purple" style="animation-delay: 0.4s;">
+                <div class="p-8">
+                    <div class="flex items-center space-x-4 mb-4">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiI+PHBhdGggZmlsbD0iIzcyNDdENyIgZD0iTTE2LjAxIDEwLjY2N2wxLjg4OC0xLjg4OWE0LjIzNCA0LjIzNCAwIDAgMSAzLjAwMy0xLjI0MWgyLjc2NnYtNC4xNGgtMi43NjZhOC4zNzYgOC4zNzYgMCAwIDAtNS45MjEgMi40NTdsLTIuNzE1IDIuNzE1YTEuMDU5IDEuMDU5IDAgMCAwIDAgMS40OTdsNC43MzYgNC43MzUgMy41MzUtMy41MzYtNC41My00LjUzNHoiLz48cGF0aCBmaWxsPSIjOTc1QUQ2IiBkPSJNMTYuMDEgMjEuMzMzbC0xLjg4OSAxLjg4OWEtNC4yMzQgNC4yMzQgMCAwIDEtMy4wMDIgMS4yNDFoLTIuNzY3djQuMTRoMi43NjdjMy4zMDkgMCA2LjMxNS0xLjI4MSA4LjYyNC0zLjY5bDIuNzE0LTIuNzE1YTEuMDU5IDEuMDU5IDAgMCAwIDAtMS40OTZsLTQuNzM1LTQuNzM2LTMuNTM2IDMuNTM2IDQuNTMxIDQuNTMyeiIvPjxwYXRoIGZpbGw9IiM0NTIwNkQiIGQ9Ik0yMS4zNDcgOC4xOTJjLTEuMTU3LTEuMTU3LTIuNTU2LTEuOTI5LTQuMDQtMi4yNnY0LjE0YzEuMDIgMCAyLjAyMS4zOTIgMi44MjggMS4xOTlsMS4yMTIgMS4yMTJ6Ii8+PHBhdGggZmlsbD0iIzc0NEVDMiIgZD0iTTEwLjY2NyAyMy44MDhjMS4xNTYgMS4xNTcgMi41NTYgMS45MjggNC4wNCAyLjI1dC00LjE0Yy0xLjAyIDAtMi4wMi0uMzkzLTIuODItMS4yLS44MDgtLjgwNS0xLjItMS44LTMuMjItMy44MDd6Ii8+PC9zdmc+" alt="Google Forms Logo" class="w-16 h-16">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiI+PHBhdGggZmlsbD0iIzQyODVGNCIgZD0iTTMwIDIySDJWMzBoMjhhMiAyIDAgMCAwIDItMlYyMnoiLz48cGF0aCBmaWxsPSIjRkZDNTEwIiBkPSJNMzAgNEgyYTIgMiAwIDAgMCAwIDRoMjhWM2EyIDIgMCAwIDAtMi0yeiIvPjxwYXRoIGZpbGw9IiMzNEE4NTMiIGQ9Ik0yOCAxMGgtNnYxMmg2VjEweiIvPjxwYXRoIGZpbGw9IiM0Mjg1RUYiIGQ9Ik0xOCAxMEgydjEyaDE2VjEweiIvPjwvc3ZnPg==" alt="Google Sites Logo" class="w-16 h-16">
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2">Forms & Sites: Engage Your Audience</h3>
+                    <p class="text-gray-600">Build professional websites and gather crucial data with intuitive, powerful tools.</p>
+                </div>
+            </a>
+            
+            <!-- Module 5: AI in Workspace -->
+            <a href="module5-ai.html" class="card card-g-red" style="animation-delay: 0.5s;">
+                <div class="p-8">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiI+PHBhdGggZmlsbD0iIzZEOUI5RCIgZD0iTTE2IDIzdjljNy4xOCAwIDkgLTYgOSAtOSIvPjxwYXRoIGZpbGw9IiM4RTU5OTUiIGQ9Ik0xNiAyM2gtOWMtMy4xOCAwIC0zIDYgMCA2aDkiLz48cGF0aCBmaWxsPSIjQ0E5OUZGIiBkPSJtMTMuMTEyIDEyLjQzNiAxLjQxNC0xLjQxNCAxLjQxNCAxLjQxNCAxLjQxNC0xLjQxNCAxLjQxNCAxLjQxNC0yLjEyIDUuMjk5LTEuNDE1IDQuMjQ1LTEuNDE0LTQuMjQ1eiIvPjxwYXRoIGZpbGw9IiM0Mjg1RjQiIGQ9Ik0xNiAwaDdjOSAwIDkgOCA5IDhzMCA5LTkgOWgtN3oiLz48cGF0aCBmaWxsPSIjOEU1OTk1IiBkPSJNMTYgMEg5QzAgMCAwIDggMCA4czAgOSA5IDloN3oiLz48L3N2Zz4=" alt="Gemini AI Logo" class="w-16 h-16 mb-4">
+                    <h3 class="text-2xl font-bold mb-2">AI in Workspace: Boost Productivity</h3>
+                    <p class="text-gray-600">Leverage the power of Gemini and other AI tools to automate tasks and accelerate your workflow.</p>
+                </div>
+            </a>
+            
+            <!-- Module 6: Communication & Collaboration -->
+            <a href="module6-collab.html" class="card card-g-teal" style="animation-delay: 0.6s;">
+                <div class="p-8">
+                     <div class="flex items-center space-x-4 mb-4">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiI+PHBhdGggZmlsbD0iIzAwODE3OCIgZD0iTTIzIDE3djRoLTN2LTQuMDRjMC0uNjktLjI1LTEuMzMtLjY5LTEuODJoLS4wMnMtLjAxIDAgMC0uMDEtLjA2LS4wNS0uMS0uMDhsLS4xNS0uMTNjLS4wMSAwIDAgMCAwIDBsLS4wOC0uMDVjLS4wNS0uMDQtLjEtLjA3LS4xNS0uMTEtLjA0LS4wMy0uMDgtLjA2LS4xMi0uMDktLjA0LS4wMy0uMDgtLjA2LS4xMy0uMDgtLjA1LS4wMy0uMS0uMDYtLjE1LS4wOC0uMDUtLjAyLS4xLS4wNC0uMTYtLjA2bC0uMTYtLjA1Yy0uMDYtLjAxLS4xMS0uMDItLjE3LS4wM2wtLjE5LS4wM2gtLjE5Yy0uMDYgMC0uMTMgMC0uMTkgLjAxbC0uMTguMDNjLS4wNi4wMS0uMTIuMDMtLjE4LjA0bC0uMTcuMDVjLS4wNi4wMi0uMTEuMDQtLjE3LjA2LS4wNS4wMi0uMS4wNS0uMTUuMDdsLS4xNC4wOGMtLjA0LjAzLS4wOC4wNS0uMTIuMDgtLjA0LjAzLS4wOC4wNi0uMTIuMDlsLS4xNS4xMWMtLjA0LjAzLS4wOS4wNy0uMTMuMTEtLjAzLjAyLS4wNS4wNS0uMDguMDdsLS4wMi4wMmMwIC4wMSAwIC4wMi0uMDIuMDJMMC4wNSA4LjY3Qy4wMiA4LjQ5IDAgOC4yNiAwIDh2MTZjMCAxLjEuOSAyIDIgMmgxN2wtNS01eiIvPjxwYXRoIGZpbGw9IiMwMENCODAiIGQ9Ik0yNSAyN2g1di01aC0xLjA3Yy4wMy4zMy4wNC42Ni4wNCAxdi0xYzAtLjE3LS4wMi0uMzQtLjA0LS41bDIuMDQtMi4wNkwzMSA4IDE2IDJsLTguMTIgMTMuNDYgMi4wNCAyLjA0Yy0uMDIuMTYtLjA0LjMzLS4wNC41djFjMCAuMzQuMDEuNjcuMDQgMWgtMy43OGwxLjU4IDIuMzZDNSAyMi45MyA1IDE5LjU5IDUgMTZoMWMwIC4zNC4wMS42Ny4wNCAxaDEzLjg1Yy0xLjg0IDIuNzUtNC43MyA0LjYyLTggNS4zNFYyN3oiLz48cGF0aCBmaWxsPSIjRkY4QzEzIiBkPSJNOC4zMyAyMi4zM2wtNC42MS02LjkxYTEgMSAwIDAgMSA1NSAwbDQuNjEgNi45MWExIDEgMCAwIDEgLjM0IDEuMDlsLTEuNjYgNC4zNWExIDEgMCAwIDEtMS41My4zNWwtLjY5LS4yNmExIDEgMCAwIDAgLTEuMiAxLjA0bDQuNSA5LjU0aDEuNTNsMy4zMy03LjA1aDIuMTFsMS43MiAzLjY0aDEuNDRsLjU0LTEuMTRIMzBWMjAuOWwtNC4yMS00LjIxbC0zLjc0IDMuNzQtNC41LTQuNUw4LjMzIDIyLjMzeiIvPjwvc3ZnPg==" alt="Google Meet Logo" class="w-16 h-16">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiI+PHBhdGggZmlsbD0iI0ZBN0IxNyIgZD0iTTE2IDguMnY2LjRMOS44IDhsMS41LTEuNUwyNCAzLjNsMS41IDEuNXoiLz48cGF0aCBmaWxsPSIjNDI4NUY0IiBkPSJtMTYgMTcuMnY2LjZsNi4yLTMuNC0xLjUtMS41LTMuMyAyLjEtMS40LTEuNHoiLz48cGF0aCBmaWxsPSIjRkRDRTUiIGQ9Ik0xNiAyNi4ydjUuNmwtOC4yLTQuNC0xLjktMi4xdi04LjlsMS45LTIuMSAyLjgtMS41eiIvPjxwYXRoIGZpbGw9IiM2QzVFRUEiIGQ9Ik0yOS45IDE2LjNsLTEuOS0yLjJMMjggMTZsMS45IDIuMiAyLjEtMS4xeiIvPjxwYXRoIGZpbGw9IiNFQTQzMzUiIGQ9Ik0zLjkgOC44bC0xLjktMi4xIDEuOS0yLjEtMi4xLTEuMS43IDIuNy0yLjIgMS41eiIvPjwvc3ZnPg==" alt="Looker Studio Logo" class="w-16 h-16 object-contain">
+                     </div>
+                    <h3 class="text-2xl font-bold mb-2">Modern Communication Tools</h3>
+                    <p class="text-gray-600">Enhance teamwork with advanced features in Meet, Chat, and collaborative reporting in Looker Studio.</p>
+                </div>
+            </a>
+        </div>
+    </main>
+</body>
+</html>
+
